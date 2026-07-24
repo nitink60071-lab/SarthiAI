@@ -85,9 +85,7 @@ function ChatWindow () {
                 </div>
             }
 
-            <div className="chatContent">
             <Chat></Chat>
-            </div>
 
             <PulseLoader color="#fff" loading={loading}>
 
