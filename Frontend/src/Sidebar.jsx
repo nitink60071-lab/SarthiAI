@@ -73,7 +73,7 @@ function Sidebar() {
         {sidebarOpen && <div className="overlay" onClick={() => setSidebarOpen(false)}></div>}
         <section className={`sidebar ${sidebarOpen ? "open" : ""}`}>
             <button onClick={createNewChat}>
-                <img src="src/assets/blacklogo.png" alt="AI logo" className="logo"></img>
+                <img src="src/assets/logo.png" alt="AI logo" className="logo"></img>
                 <span>
                 <i className="fa-solid fa-pen-to-square"></i>
                 </span>
