@@ -84,7 +84,10 @@ function ChatWindow () {
                     <div className="dropDownItem"> <i className="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; Log out</div>
                 </div>
             }
+
+            <div className="chatContent">
             <Chat></Chat>
+            </div>
 
             <PulseLoader color="#fff" loading={loading}>
 

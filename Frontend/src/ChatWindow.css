@@ -1,6 +1,5 @@
 .chatWindow {
     background-color: #212121;
-    height: 100vh;
     height: 100dvh;
     width: 100%;
     display: flex;
@@ -17,6 +16,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    background-color: #212121;
 }
 
 .navbar span {
@@ -49,6 +53,13 @@
     box-sizing: border-box;
     padding: 0 16px;
     padding-bottom: 16px;
+}
+
+.chatContent {
+    width: 100%;
+    padding-top: 60px;
+    flex: 1;
+    overflow-y: auto;
 }
 
 .inputBox {
