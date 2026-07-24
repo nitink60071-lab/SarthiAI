@@ -26,12 +26,12 @@ function ChatWindow () {
         };
 
         try {
-            const response = await fetch("http://localhost:8080/api/chat", options);
+            const response = await fetch("https://sarthiai-3xaj.onrender.com/api/chat", options);
             const res = await response.json();
             console.log(res);
             setReply(res.reply);
 
-            const threadsRes = await fetch("http://localhost:8080/api/thread");
+            const threadsRes = await fetch("https://sarthiai-3xaj.onrender.com/api/thread");
             const threadsData = await threadsRes.json();
             const filtered = threadsData.map(t => ({threadId: t.threadId, title: t.title}));
             setAllThreads(filtered);
